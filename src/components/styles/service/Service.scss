@@ -1,0 +1,146 @@
+@import "../global";
+
+#service {
+  background: black;
+
+  .service-general {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    &__text {
+      position: relative;
+
+
+      &--group {
+        position: absolute;
+        top: 40%;
+        left: 20%;
+        &__title {
+          font-family: 'Krona One', sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 40px;
+          line-height: 50px;
+          color: #FFFFFF;
+        }
+        &:before{
+          content: '';
+          position: absolute;
+          background:  #F1E3D6;
+          transform: matrix(0.01, -1, 1, 0.01, 0, 0) rotate(90deg);
+          width: 80%;
+          left: 50%;
+          height: 3px;
+        }
+        &:after{
+          content: '';
+          position: absolute;
+          background:  #F1E3D6;
+          transform: matrix(0.01, -1, 1, 0.01, 0, 0) rotate(90deg);
+          width: 80%;
+          right: 50%;
+          height: 3px;
+        }
+
+      }
+    }
+
+
+    &__block {
+      display: flex;
+      align-items: center;
+
+      &--title {
+        font-family: 'Kelly Slab', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 50px;
+        line-height: 61px;
+        letter-spacing: 0.085em;
+        margin: 0 10px;
+        color: rgba(199, 161, 125, 0.9);
+      }
+
+      &--dot {
+        font-family: 'Kelly Slab', sans-serif;
+        font-size: 40px;
+        color: rgba(199, 161, 125, 0.9);
+        margin: 0 1rem;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 1440px) {
+  .container{
+    width: 90%;
+  }
+}
+@media (max-width: 1240px) {
+
+}
+@media (max-width: 1024px) {
+  #service {
+    .service-general {
+      flex-direction: column;
+    }
+  .service-general__block--title {
+
+      font-size: 31px;
+    }
+    .service-general__block--dot {
+      font-size: 24px;
+    }
+  }
+
+}
+@media (max-width: 992px) {
+
+}
+@media (max-width: 768px) {
+
+}
+@media (max-width: 576px) {
+
+}
+@media (max-width: 450px) {
+
+}
+@media (max-width: 426px) {
+  #service {
+    .service-general__block--title {
+      font-size: 15px;
+    }
+    .service-general__block--dot {
+      font-size: 14px;
+    }
+  }
+}
+@media (max-width: 375px) {
+  #service {
+    .service-general__block--title {
+      font-size: 15px;
+    }
+    .service-general__block--dot {
+      font-size: 14px;
+    }
+  }
+
+}
+@media (max-width: 320px) {
+  #service {
+    .service-general__block--title {
+      font-size: 11px;
+    }
+    .service-general__block--dot {
+      font-size: 10px;
+    }
+   .service-general__block--dot {
+
+      margin: 0 0.6rem;
+    }
+  }
+}
+

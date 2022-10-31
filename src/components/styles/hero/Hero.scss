@@ -1,0 +1,110 @@
+@import "../global";
+
+#hero {
+  background: url("../../../assets/bag.png") no-repeat center/cover;
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  z-index: -1;
+
+  .hero-general {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__text {
+      position: absolute;
+      left: -5%;
+      &__title {
+        font-family: 'Kelly Slab', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        color: #FFFFFF;
+        transform: rotate(-90deg);
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        &:before {
+          content: "";
+          position: absolute;
+          background: #F1E3D6;
+          //transform: matrix(0.01, -1, 1, 0.01, 0, 0) rotate(90deg);
+          width: 20%;
+          height: 3px;
+          right: -30%;
+        }
+
+        &:after {
+          content: "";
+          position: absolute;
+          background: #F1E3D6;
+          //transform: matrix(0.01, -1, 1, 0.01, 0, 0) rotate(90deg);
+          width: 20%;
+          height: 3px;
+          left: -30%;
+        }
+      }
+    }
+
+    button {
+      padding: 14px 70px;
+      background: rgba(0, 0, 0, 0.6);
+      box-shadow: 0 4px 1px rgba(0, 0, 0, 0.25);
+      border-radius: 45px;
+      font-family: 'Kelly Slab', sans-serif;
+      border: 1px solid #C7A17D;
+      font-size: 30px;
+      margin-top: 130%;
+      color: #FFFFFF;
+    }
+
+  }
+}
+
+
+
+@media (max-width: 1440px) {
+  .container{
+    width: 90%;
+  }
+}
+@media (max-width: 1240px) {
+
+}
+@media (max-width: 1024px) {
+  #hero{
+    .hero-general__text__title {
+      font-size: 12px;
+    }
+  }
+}
+@media (max-width: 992px) {
+
+}
+@media (max-width: 768px) {
+  #hero{
+    .hero-general__text__title {
+      font-size: 10px;
+    }
+  }
+}
+@media (max-width: 576px) {
+
+}
+@media (max-width: 450px) {
+
+}
+@media (max-width: 420px) {
+
+}
+@media (max-width: 380px) {
+
+}
+@media (max-width: 320px) {
+
+}
+
+
